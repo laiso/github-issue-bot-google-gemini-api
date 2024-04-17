@@ -38,7 +38,9 @@ function generateComment(filesContent, issue) {
                 {
                     "role": "user",
                     "parts": {
-                        "text": `ISSUE: ${issue} FILES: ${filesContent}`
+                        "text": `You should propose specific source code changes to resolve the Issue.
+                        ISSUE: ${issue} 
+                        FILES: ${filesContent}`
                     }
                 }
             ]
